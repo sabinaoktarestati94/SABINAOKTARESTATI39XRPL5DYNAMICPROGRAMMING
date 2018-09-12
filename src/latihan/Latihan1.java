@@ -5,6 +5,8 @@
  */
 package latihan;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Asus
@@ -19,6 +21,18 @@ public class Latihan1 {
         public static void main(String[] args){
             String identitas = "Sabina Okta Restati / XRPL5 / 39";
             tampilJudul(identitas);
+            
+            int n = tampilInput();
         }
-    }
+            private static int tampilInput() {
+                Scanner scanner = new Scanner (System.in);
+                
+                System.out.print("Bilangan ke-: ");
+                int n = scanner.nextInt();
+                
+                return n;
+            }
+            }
+        
+    
 
